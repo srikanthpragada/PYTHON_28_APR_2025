@@ -3,7 +3,7 @@
 marks = int(input("Enter marks :"))
 
 if marks >= 80:
-    print('C')
+    print('A')
 elif marks >= 60:
     print('B')
 elif marks >= 50:
