@@ -1,13 +1,16 @@
-total = 0
+total = count = 0
 
 while True:    # infinite loop
     num = int(input("Enter a number [0 to stop] :"))
     if num == 0:
         break
 
-    if num > 0:
-        total += num
+    if num < 0:
+        continue
 
-print(f'Total = {total}')
+    total += num
+    count += 1
+
+print(f'Total = {total}, Average = {total/count}')
 
 
