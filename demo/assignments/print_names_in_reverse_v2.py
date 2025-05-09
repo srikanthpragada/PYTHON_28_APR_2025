@@ -4,10 +4,15 @@ while True:
     name = input("Enter name [end to stop] : ")
     if name == "end":
         break
-    if name not in names:
+
+    # check whether name is already present
+    for n in names:
+        if n.upper() == name.upper():
+            print("Duplicate Name!")
+            break
+    else:
         names.append(name)
 
-print(names[::-1])
 
 for name in names[::-1]:
     print(name)
