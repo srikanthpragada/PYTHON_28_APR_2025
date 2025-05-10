@@ -1,13 +1,11 @@
-data = "90,88,75,a, 34,45"
+data = "10,88,15 ,a, 30,40"
 
 parts = data.split(",")
 print(parts)
 
 total = 0
 for n in parts:
-    total += int(n)
+    if n.strip().isdigit():
+        total += int(n)
 
 print(total)
-
-
-
