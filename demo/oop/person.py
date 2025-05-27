@@ -3,6 +3,11 @@ class Person:
         self.name = name
         self.__email = email  # private attribute
 
+
+    @property
+    def fullname(self):
+        return self.name
+
     def getemail(self):
         return self.__email
 
@@ -11,6 +16,8 @@ class Person:
 
 
 p = Person("James", "james@microsoft.com")
+print(p.fullname)  # Use Property
+
 #print(p.__email)
 print(p.getemail())
 print(p.__dict__)
